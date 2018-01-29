@@ -11,6 +11,9 @@ import (
 
 // Typed errors
 var (
+	ErrFolderNotFound                    = errors.New("Folder not found")
+	ErrFolderVersionMismatch             = errors.New("The folder has been changed by someone else")
+	ErrFolderTitleEmpty                  = errors.New("Folder title cannot be empty")
 	ErrDashboardNotFound                 = errors.New("Dashboard not found")
 	ErrDashboardSnapshotNotFound         = errors.New("Dashboard snapshot not found")
 	ErrDashboardWithSameNameExists       = errors.New("A dashboard with the same name already exists")
